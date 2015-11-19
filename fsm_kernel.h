@@ -1,3 +1,4 @@
+/*
 Copyright (c) 2000-2014, Amir Nathoo <amir.nth@gmail.com>
 All rights reserved.
 
@@ -22,12 +23,12 @@ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
 ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
 
 /*
 * fsm_kernel.h
 *
-*  Created on:  Jan,25th 2014 
-*      Author:  Amir Nathoo
+*  File created on:  Jan 25th, 2014 
 *
 *  Description: Public header file for the Fsm Engine
 */
@@ -69,11 +70,11 @@ class FsmKernel
   
   private:
     /* Trace related */
-    char   mFsmName[256];                 /* current fsm name */
+    char   mFsmName[256];                  /* current fsm name */
     char   mTrace[256];                    /* trace to be displayed */
-    const char** mEventNameTbl;          /* event names */
-    const char** mActionNameTbl;         /* action names */
-    const char** mStateNameTbl;          /* state names */
+    const char** mEventNameTbl;            /* event names */
+    const char** mActionNameTbl;           /* action names */
+    const char** mStateNameTbl;            /* state names */
     
     /* Fsm engine variables */
     FsmState mState;                       /* current state */
